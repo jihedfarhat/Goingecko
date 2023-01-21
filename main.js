@@ -1,4 +1,4 @@
-fetch('https://api.coingecko.com/api/v3/simple/price?ids=dogecoin%2Cmatic-network%2Cbinancecoin%2Cbitcoin%2Cethereum&vs_currencies=usd%2Ceur&include_last_updated_at=true')
+fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum%2Cbinancecoin%2Cmatic-network%2Cdogecoin%2Cbitcoin&vs_currencies=usd%2Ceur&include_last_updated_at=true')
         .then(res => res.json())
         .then(json => {
 
@@ -30,3 +30,4 @@ fetch('https://api.coingecko.com/api/v3/simple/price?ids=dogecoin%2Cmatic-networ
         `;
     }
 });
+
