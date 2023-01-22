@@ -5,23 +5,20 @@
 }
 html {box-sizing: border-box;} 
 *, *:before, *:after {box-sizing: inherit;}  
+/* Mobile */
 
-
-@media (max-width: 768px) {
-    body {
-        max-width: 720px;
+@media (max-width: 767px) {
+    .coin.falling{
+        width: 400px;
     }
 }
-  @media (max-width: 992px) {
-    body {
-      max-width: 960px;
+@media (max-width: 767px) {
+    .coin .coin-price span{
+        font-size: 18px;
+        font-weight: 400;
     }
-  }
-  @media (max-width: 1200px) {
-    body {
-      max-width: 1140px;
-    }
-  }
+}
+
 
 body{
     height: 100vh;
