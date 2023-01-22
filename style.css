@@ -4,14 +4,25 @@
     box-sizing: border-box;
 }
 html {box-sizing: border-box;} 
- 
 *, *:before, *:after {box-sizing: inherit;}  
 
-@viewport {
-    width: device-width;
-    user-scalable: no;
+
+@media (min-width: 768px) {
+    body {
+        max-width: 720px;
+    }
+}
+  @media (min-width: 992px) {
+    body {
+      max-width: 960px;
+    }
   }
-  
+  @media (min-width: 1200px) {
+    body {
+      max-width: 1140px;
+    }
+  }
+
 body{
     height: 100vh;
     display: flex;
@@ -47,7 +58,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-   
 }
 
 .coin .coin-name h3{
