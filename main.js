@@ -13,19 +13,19 @@ fetch('https://api.coingecko.com/api/v3/simple/price?ids=ethereum%2Cbinancecoin%
         
 
         container.innerHTML += `
-      
+    
         <div class="coin falling">
             <div class="coin-logo">
-                 <img src="./images/${coin}.png">
+                <img src="./images/${coin}.png">
             </div>
             <div class="coin-name">
-                 <h3>${coin}</h3>
+                <h3>${coin}</h3>
             </div>
-             <div class="coin-price">
+            <div class="coin-price">
             <span class="dollar">$${dollar}</span>
         <span class="euro">€${euro}</span>
-         </div>
-         </div>
+        </div>
+        </div>
         
         `;
     }

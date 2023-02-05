@@ -8,8 +8,8 @@ html {box-sizing: border-box;}
 /* Mobile */
 
 @media (max-width: 767px) {
-    .coin.falling{
-        width: 400px;
+    .coin.falling {
+        width: calc(98%);
     }
 }
 @media (max-width: 767px) {
@@ -25,11 +25,16 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #161616;
-
+    flex-wrap: wrap;
+    background-image: url("images/image.jpg");
+    background-size: cover;
 }
+
 .coin{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 460px;
     height: 100px;
     border-radius: 20px;
@@ -59,7 +64,7 @@ body{
 
 .coin .coin-name h3{
     color: #fff;
-    font-size: 28px;
+    font-size: 23px;
     text-transform: uppercase;
 }
 
